@@ -12,9 +12,16 @@
   <div id="root"></div>
   <h1>Getting Started with React</h1>
   <script type="text/javascript">
-    let heading = React.createElement("h1", null, "Getting Started with React!!");
+    let ul = React.createElement(
+      "ul",
+      { style: { color: "blue" }},
+      React.createElement("li", null, "Item 1"),
+      React.createElement("ili", null, "Item 2"),
+      React.createElement("li", null, "Item 3"),
+    );
+
     ReactDOM.render(
-      heading,
+      ul,
       document.getElementById("root")
     );
   </script>
